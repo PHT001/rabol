@@ -19,7 +19,7 @@ export default function VideoClaude() {
               playsInline
               className="w-full h-auto"
             >
-              <source src="/images/videoclaude.mov" type="video/mp4" />
+              <source src="/images/videoclaude.mp4" type="video/mp4" />
             </video>
             {/* White vignette */}
             <div

@@ -112,7 +112,7 @@ export default function HowItWorks() {
               </motion.div>
 
               {/* Visual side */}
-              <div className={i % 2 === 1 ? "lg:order-1" : ""}>
+              <div className={`${i % 2 === 1 ? "lg:order-1" : ""} scale-[0.85] origin-top lg:scale-100`}>
                 {i === 0 ? (
                   <ChatbotAnimation />
                 ) : i === 1 ? (
