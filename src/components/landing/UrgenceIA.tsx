@@ -136,11 +136,11 @@ export default function UrgenceIA() {
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              Le marché de l&apos;IA explose. Les entreprises cherchent désespérément des prestataires capables de déployer des solutions IA concrètes. Pendant que la majorité observe, une minorité agit et prend des parts de marché massives.
+              Le marché de l&apos;IA explose. Les entreprises cherchent <strong className="text-gray-900">des prestataires IA</strong> — mais personne n&apos;est formé. <strong className="text-gray-900">Une minorité agit</strong>, les autres regardent.
             </p>
 
             <p className="text-gray-900 font-semibold text-lg mb-10">
-              La question n&apos;est pas <span className="text-[#FF1744]">si</span> tu dois te lancer, mais <span className="text-[#FF1744]">quand</span>. Et la réponse, c&apos;est maintenant.
+              La question n&apos;est pas <span className="text-[#FF1744]">si</span> tu dois te lancer, mais <span className="text-[#FF1744]">quand</span>.
             </p>
 
             {/* Stats */}
