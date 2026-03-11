@@ -101,21 +101,16 @@ export default function Hero() {
               </a>
 
               <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  <div className="h-8 w-8 rounded-full border-2 border-white overflow-hidden">
-                    <Image src="/images/founder-igor.jpg" alt="" width={32} height={32} className="h-full w-full object-cover" />
-                  </div>
-                  <div className="h-8 w-8 rounded-full border-2 border-white overflow-hidden">
-                    <Image src="/images/founder-marius.png" alt="" width={32} height={32} className="h-full w-full object-cover" />
-                  </div>
-                  {[3, 4].map((i) => (
-                    <div key={i} className="h-8 w-8 rounded-full border-2 border-white bg-gradient-to-br from-gray-200 to-gray-300" />
-                  ))}
-                </div>
-                <div className="text-sm text-[#6B7280]">
-                  <span className="text-[#FF1744] font-semibold">★★★★★</span>
-                  <br />
-                  Rejoint par +150 entrepreneurs
+                <Image src="/images/customers.webp" alt="Customers" width={160} height={40} className="h-10 w-auto" />
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[15px] font-semibold text-gray-900">4.9/5</span>
+                  <span className="text-[14px] text-gray-500">from</span>
+                  <span className="text-[15px] font-semibold text-gray-900">1783</span>
+                  <span className="text-[14px] text-gray-500">customers</span>
+                  <svg className="h-[18px] w-[18px] ml-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                    <path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81C14.67 2.63 13.43 1.75 12 1.75s-2.67.88-3.34 2.19c-1.39-.46-2.9-.2-3.91.81s-1.27 2.52-.81 3.91C2.63 9.33 1.75 10.57 1.75 12s.88 2.67 2.19 3.34c-.46 1.39-.2 2.9.81 3.91s2.52 1.27 3.91.81C9.33 21.37 10.57 22.25 12 22.25s2.67-.88 3.34-2.19c1.39.46 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34z" fill="#1D9BF0"/>
+                    <path d="M9.28 12.71l1.42 1.42c.39.39 1.02.39 1.41 0l3.18-3.18c.39-.39.39-1.02 0-1.41a.9959.9959 0 00-1.41 0L11.4 12.02l-.71-.71a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.4z" fill="white"/>
+                  </svg>
                 </div>
               </div>
             </motion.div>
