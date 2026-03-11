@@ -50,32 +50,28 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-lg lg:text-xl text-[#6B7280] max-w-xl mx-auto mb-10 leading-relaxed"
             >
-              Apprends à créer et vendre des services IA avec
-              <span className="inline-flex items-center gap-1.5 mx-1.5 relative">
+              Apprends à créer et vendre des services IA avec{" "}
+              <span className="inline-flex items-center gap-1 mx-0.5 align-middle translate-y-[-1px]">
                 <Image
                   src="/images/logos/claude-icon.svg"
                   alt="Claude"
-                  width={24}
-                  height={24}
-                  className="h-6 w-6 inline-block"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5"
                 />
                 <span className="text-[#C4956A] font-semibold">Claude</span>
-                {/* Neon glow behind */}
-                <span className="absolute inset-0 bg-[#D4A574]/10 blur-lg rounded-full -z-10" />
-              </span>
-              et
-              <span className="inline-flex items-center gap-1.5 mx-1.5 relative">
+              </span>{" "}
+              et{" "}
+              <span className="inline-flex items-center gap-1 mx-0.5 align-middle translate-y-[-1px]">
                 <Image
                   src="/images/logos/openclaw-icon.svg"
                   alt="OpenClaw"
-                  width={24}
-                  height={24}
-                  className="h-6 w-6 inline-block"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5"
                 />
                 <span className="text-[#6366F1] font-semibold">OpenClaw</span>
-                <span className="absolute inset-0 bg-[#6366F1]/10 blur-lg rounded-full -z-10" />
-              </span>
-              . Pas besoin de coder.
+              </span>. Pas besoin de coder.
             </motion.p>
 
             <motion.div
