@@ -67,7 +67,7 @@ export default function UrgenceIA() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="flex flex-col items-center"
           >
-            <p className="text-sm font-medium text-gray-500 mb-4 text-center">Les secteurs d&apos;activités impactés par l&apos;IA</p>
+            <p className="text-xl font-bold text-gray-900 mb-5 text-center">Les secteurs d&apos;activités <span className="text-[#FF1744]">impactés</span> par l&apos;IA</p>
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
