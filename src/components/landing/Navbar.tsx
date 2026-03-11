@@ -48,8 +48,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <span className="text-lg font-bold text-white tracking-tight">
-              Opex<span className="text-[#6366F1]">IA</span>
+            <span className="text-xl font-extrabold text-white tracking-tight">
+              Opex<span className="text-[#FF1744]">IA</span>
             </span>
           </a>
 
