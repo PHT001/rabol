@@ -52,7 +52,7 @@ export default function ProjectBuilderAnimation() {
         </div>
         <div className="flex-1 mx-2">
           <div className="bg-white rounded-md px-3 py-1 text-[11px] text-gray-400 border border-gray-200 truncate">
-            mon-agence-ia.openclaw.com
+            mon-agence-ia.com
           </div>
         </div>
       </div>

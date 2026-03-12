@@ -5,57 +5,57 @@ import { motion } from "framer-motion";
 const weeks = [
   {
     num: 1,
-    title: "Fondations IA & Claude",
-    lessons: "7 leçons",
+    title: "Fondations IA & Stack Technique",
+    lessons: "7 le\u00e7ons",
     points: [
-      "Comprendre l'IA et ses applications business",
-      "Maîtriser l'interface Claude",
+      "Comprendre l\u2019\u00e9cosyst\u00e8me : LLMs, APIs, agents, prompting avanc\u00e9",
+      "Choisir les bons outils selon chaque cas client",
       "Premiers prompts efficaces",
-      "Cas d'usage pour entreprises locales",
+      "Cas d\u2019usage pour entreprises locales",
     ],
-    result: "Tu comprends l'IA et tu sais utiliser Claude comme un pro",
+    result: "Tu comprends l\u2019IA et tu ma\u00eetrises les fondamentaux",
   },
   {
     num: 2,
-    title: "Prompt Engineering & Skills Claude",
-    lessons: "7 leçons",
+    title: "Construire des Infrastructures IA",
+    lessons: "7 le\u00e7ons",
     points: [
-      "Techniques avancées de prompt engineering",
-      "Créer des skills réutilisables",
-      "Automatiser des workflows complexes",
-      "Optimiser la qualité des outputs",
+      "Techniques avanc\u00e9es de prompt engineering",
+      "Cr\u00e9er des workflows complexes et agents autonomes",
+      "Automatiser des processus business complets",
+      "Optimiser la qualit\u00e9 des outputs",
     ],
-    result: "Tu crées des prompts qui produisent des résultats professionnels",
+    result: "Tu cr\u00e9es des syst\u00e8mes IA qui produisent des r\u00e9sultats pro",
   },
   {
     num: 3,
-    title: "Installer & Configurer OpenClaw",
-    lessons: "8 leçons",
+    title: "D\u00e9finir & Packager ton Offre",
+    lessons: "8 le\u00e7ons",
     points: [
-      "Installation et setup complet",
-      "Créer tes premiers projets clients",
-      "Déployer des chatbots et sites web",
-      "Intégrer les APIs et automatisations",
+      "Trouver ta niche et cr\u00e9er des offres productis\u00e9es",
+      "Cr\u00e9er tes premiers projets clients",
+      "D\u00e9ployer des chatbots et sites web",
+      "Int\u00e9grer les APIs et automatisations",
     ],
-    result: "Tu as un portfolio de projets prêts à vendre",
+    result: "Tu as un portfolio de projets pr\u00eats \u00e0 vendre",
   },
   {
     num: 4,
-    title: "Sécuriser OpenClaw & Lancer",
-    lessons: "6 leçons",
+    title: "Trouver tes Clients & Scaler",
+    lessons: "6 le\u00e7ons",
     points: [
-      "Sécurité et bonnes pratiques",
-      "Stratégies de prospection client",
-      "Pricing et négociation",
+      "Scripts de prospection test\u00e9s",
+      "Strat\u00e9gies de prospection client",
+      "Pricing et n\u00e9gociation",
       "Scaler ton agence IA",
     ],
-    result: "Tu es prêt à signer tes premiers clients",
+    result: "Tu es pr\u00eat \u00e0 signer tes premiers clients",
   },
 ];
 
 export default function Program() {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <section className="py-2 lg:py-3 bg-white relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ export default function Program() {
         </motion.div>
 
         {/* Timeline */}
-        <div className="relative max-w-3xl mx-auto">
+        <div className="relative max-w-3xl mx-auto z-10">
           {/* Vertical line */}
           <div className="absolute left-6 lg:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-[#FF1744]/20 via-[#FF1744]/40 to-[#FF1744]/20" />
 
@@ -140,6 +140,37 @@ export default function Program() {
             ))}
           </div>
         </div>
+
+      </div>
+
+      {/* Floating robot with printer video */}
+      <div className="flex justify-center -mt-8 pb-2">
+        <motion.div
+          animate={{ y: [0, -8, 0] }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          className="relative w-56 h-56 lg:w-72 lg:h-72"
+        >
+          <video
+            src="/images/imprimante.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-contain"
+          />
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              boxShadow: "inset 30px 0 35px 6px white, inset -30px 0 35px 6px white, inset 0 35px 40px 8px white, inset 0 -35px 40px 8px white",
+            }}
+          />
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: "radial-gradient(ellipse 72% 68% at 50% 50%, transparent 30%, white 83%)",
+            }}
+          />
+        </motion.div>
       </div>
     </section>
   );

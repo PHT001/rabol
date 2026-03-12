@@ -6,19 +6,20 @@ const plans = [
   {
     name: "Starter",
     price: "49",
+    oldPrice: "89",
     period: "paiement unique",
-    description: "Pour découvrir le monde de l'IA",
+    description: "Pour d\u00e9couvrir le monde de l'IA",
     popular: false,
     features: [
       "Guide PDF complet",
       "Checklist de lancement",
       "Templates de base",
-      "Accès Discord communautaire",
-      "Mises à jour gratuites",
+      "Acc\u00e8s Discord communautaire",
+      "Mises \u00e0 jour gratuites",
     ],
     notIncluded: [
-      "Accès plateforme de cours",
-      "Assistant IA intégré",
+      "Acc\u00e8s plateforme de cours",
+      "Assistant IA int\u00e9gr\u00e9",
       "Visios individuelles",
     ],
     cta: "Commencer",
@@ -26,18 +27,19 @@ const plans = [
   {
     name: "Academy",
     price: "397",
+    oldPrice: "697",
     period: "paiement unique",
-    description: "La formation complète pour lancer ton agence",
+    description: "La formation compl\u00e8te pour lancer ton agence",
     popular: true,
     features: [
       "Tout le pack Starter",
-      "80 leçons vidéo & texte",
+      "80 le\u00e7ons vid\u00e9o & texte",
       "Quiz & exercices pratiques",
-      "Assistant IA intégré",
-      "Plateforme complète",
+      "Assistant IA int\u00e9gr\u00e9",
+      "Plateforme compl\u00e8te",
       "Pipeline CRM",
       "Templates IA premium",
-      "Générateur de projets",
+      "G\u00e9n\u00e9rateur de projets",
       "Gamification (XP, streaks, badges)",
       "Programme de parrainage",
     ],
@@ -47,16 +49,17 @@ const plans = [
   {
     name: "One-to-One",
     price: "997",
+    oldPrice: "1497",
     period: "paiement unique",
-    description: "Accompagnement personnalisé premium",
+    description: "Accompagnement personnalis\u00e9 premium",
     popular: false,
     features: [
       "Tout le pack Academy",
       "4 visios individuelles (1h)",
       "Review de tes projets",
       "Support prioritaire",
-      "Réseau privé VIP",
-      "Accès à vie aux mises à jour",
+      "R\u00e9seau priv\u00e9 VIP",
+      "Acc\u00e8s \u00e0 vie aux mises \u00e0 jour",
     ],
     notIncluded: [],
     cta: "Postuler",
@@ -65,7 +68,7 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-16 lg:py-20 bg-[#F8F9FA]">
+    <section id="pricing" className="py-16 lg:py-20 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -80,8 +83,11 @@ export default function Pricing() {
             Choisis ta formule
           </h2>
           <p className="mt-4 text-lg text-[#6B7280]">
-            Investis dans toi. Rentabilise dès le premier mois.
+            Investis dans toi. Rentabilise d&egrave;s le premier mois.
           </p>
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/20 px-4 py-2 text-sm text-[#FF1744] font-medium">
+            <span>&#9889;</span> Tarif early-bird &mdash; expire le 31 mars 2026
+          </div>
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-8 items-start">
@@ -111,11 +117,14 @@ export default function Pricing() {
                 <p className="text-sm text-[#6B7280] mt-1">
                   {plan.description}
                 </p>
-                <div className="mt-6 flex items-baseline gap-1">
+                <div className="mt-6 flex items-baseline gap-2">
+                  <span className="text-lg font-medium text-[#6B7280] line-through">
+                    {plan.oldPrice}&euro;
+                  </span>
                   <span className="text-5xl font-black tracking-tight text-[#111]">
                     {plan.price}
                   </span>
-                  <span className="text-lg font-medium text-[#6B7280]">€</span>
+                  <span className="text-lg font-medium text-[#6B7280]">&euro;</span>
                 </div>
                 <p className="text-sm text-[#6B7280] mt-1">{plan.period}</p>
               </div>

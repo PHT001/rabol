@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
   {
     q: "Est-ce que j'ai besoin de savoir coder ?",
-    a: "Non, absolument pas. La formation est conçue pour les débutants complets. On t'apprend à utiliser Claude et OpenClaw pour créer des services IA sans écrire une seule ligne de code. Tout passe par des prompts et des interfaces visuelles.",
+    a: "Non, absolument pas. La formation est con\u00e7ue pour les d\u00e9butants complets. On utilise des outils no-code et low-code (n8n, Make, interfaces API visuelles). Si tu sais utiliser un ordinateur, tu peux construire des infrastructures IA pro.",
   },
   {
     q: "Combien de temps faut-il pour voir des résultats ?",
@@ -21,8 +21,8 @@ const faqs = [
     a: "Oui, la formation est 100% en ligne et accessible à ton rythme. Compte environ 1 à 2 heures par jour. Les leçons sont courtes et actionnables. Tu peux avancer le soir ou le week-end.",
   },
   {
-    q: "Qu'est-ce que OpenClaw exactement ?",
-    a: "OpenClaw est une plateforme qui te permet de déployer des solutions IA pour tes clients : chatbots, automatisations, sites web. C'est l'outil qui te permet de créer des projets professionnels sans compétences techniques avancées.",
+    q: "Le march\u00e9 n\u2019est-il pas d\u00e9j\u00e0 satur\u00e9 ?",
+    a: "Moins de 3% des PME europ\u00e9ennes ont d\u00e9j\u00e0 adopt\u00e9 de vraies automatisations IA. Le march\u00e9 est en pleine explosion. Ce n\u2019est pas satur\u00e9 \u2014 c\u2019est vierge. Et les agences IA s\u00e9rieuses sont rarissimes.",
   },
   {
     q: "10k€/mois, c'est réaliste ?",

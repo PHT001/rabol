@@ -74,14 +74,14 @@ export default function UrgenceIA() {
               className="rounded-2xl border border-gray-200/80 bg-white shadow-[0_24px_70px_rgba(0,0,0,0.12),0_8px_24px_rgba(0,0,0,0.06)] overflow-hidden"
             >
               <Image
-                src="/images/graphv3.jpeg"
+                src="/images/graph2.jpeg"
                 alt="Impact de l'IA par secteur d'activité"
                 width={500}
                 height={500}
                 className="w-full"
               />
               <div className="px-4 py-3 border-t border-gray-100 flex items-center justify-between">
-                <span className="text-[11px] text-gray-400">ANTHROPIC, March 5, 2026</span>
+                <span className="text-[11px] text-gray-400">Source: Rapport IA 2026</span>
                 <a
                   href="https://cdn.sanity.io/files/4zrzovbb/website/dc7bcd0224644fce97cecb7f9e68dcd8434b35f1.pdf"
                   target="_blank"

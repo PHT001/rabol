@@ -9,13 +9,13 @@ const steps = [
   {
     num: "01",
     title: "Apprends les fondamentaux",
-    desc: "Maîtrise Claude, le prompt engineering et les bases de l'IA appliquée au business. Tu pars de zéro ? Parfait. Nos 74 leçons sont conçues pour ça.",
+    desc: "Ma\u00eetrise le prompt engineering, les LLMs et les bases de l'IA appliqu\u00e9e au business. Tu pars de z\u00e9ro ? Parfait. Nos 74 le\u00e7ons sont con\u00e7ues pour \u00e7a.",
     features: ["13 modules structurés", "Quiz interactifs", "Assistant IA intégré"],
   },
   {
     num: "02",
     title: "Crée tes premiers projets IA",
-    desc: "Construis des chatbots, des sites web et des automatisations avec OpenClaw. Tu auras un portfolio complet de services à vendre.",
+    desc: "Construis des chatbots, des sites web et des automatisations avec les meilleurs outils IA. Tu auras un portfolio complet de services \u00e0 vendre.",
     features: ["Exercices pratiques", "Templates prêts à l'emploi", "Projets réels"],
   },
   {

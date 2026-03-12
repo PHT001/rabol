@@ -26,7 +26,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-3"
+      className="fixed top-8 left-0 right-0 z-50 flex justify-center px-4 pt-3"
     >
       {/* Glass pill container */}
       <div
@@ -135,8 +135,8 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white mt-2"
                 style={{
-                  background: "linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)",
-                  boxShadow: "0 2px 12px rgba(99,102,241,0.4)",
+                  background: "linear-gradient(135deg, #FF1744 0%, #D50000 100%)",
+                  boxShadow: "0 2px 12px rgba(255,23,68,0.4)",
                 }}
               >
                 Audit Gratuit

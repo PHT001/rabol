@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative flex items-center pt-20 pb-4 overflow-hidden">
+    <section className="relative flex items-center pt-28 pb-4 overflow-hidden">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-red-50/30 pointer-events-none" />
 
@@ -20,7 +20,7 @@ export default function Hero() {
       </motion.div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8 py-6 lg:py-12">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function Hero() {
             >
               <span className="inline-flex items-center gap-2 rounded-full bg-red-50 px-4 py-1.5 text-sm font-medium text-[#FF1744] mb-8">
                 <span className="h-2 w-2 rounded-full bg-[#FF1744] animate-pulse" />
-                La formation #1 pour lancer ton agence IA
+                Le business #1 le plus profitable de 2026
               </span>
             </motion.div>
 
@@ -36,42 +36,20 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-[64px] font-bold leading-[1.1] tracking-tight mb-6"
+              className="text-4xl sm:text-5xl lg:text-[56px] font-bold leading-[1.15] tracking-tight mb-6"
             >
-              Crée ton agence IA.
+              L&apos;agence IA : le business le plus
               <br />
-              <span className="text-[#FF1744]">10k€/mois</span> en 30 jours.
+              profitable de 2026 pour atteindre <span className="text-[#FF1744]">10K&euro;/mois</span>
             </motion.h1>
 
-            {/* Subtitle with floating neon logos Claude + OpenClaw */}
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-lg lg:text-xl text-[#6B7280] max-w-xl mx-auto mb-10 leading-relaxed"
+              className="relative z-10 text-lg lg:text-xl text-[#6B7280] max-w-xl mx-auto mb-20 leading-relaxed"
             >
-              Apprends à créer et vendre des services IA avec{" "}
-              <span className="inline-flex items-center gap-1 mx-0.5 align-middle translate-y-[-1px]">
-                <Image
-                  src="/images/logos/claude-icon.svg"
-                  alt="Claude"
-                  width={20}
-                  height={20}
-                  className="h-5 w-5"
-                />
-                <span className="text-[#C4956A] font-semibold">Claude</span>
-              </span>{" "}
-              et{" "}
-              <span className="inline-flex items-center gap-1 mx-0.5 align-middle translate-y-[-1px]">
-                <Image
-                  src="/images/logos/openclaw-icon.svg"
-                  alt="OpenClaw"
-                  width={20}
-                  height={20}
-                  className="h-5 w-5"
-                />
-                <span className="text-[#6366F1] font-semibold">OpenClaw</span>
-              </span>. Pas besoin de coder.
+              Apprends &agrave; ma&icirc;triser les infrastructures IA, vendre des services d&apos;automatisation aux entreprises, et g&eacute;n&eacute;rer des revenus r&eacute;currents — m&ecirc;me en partant de z&eacute;ro.
             </motion.p>
 
             <motion.div
@@ -80,35 +58,59 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="flex flex-col sm:flex-row items-center justify-center gap-6"
             >
-              <a
-                href="#pricing"
-                className="group inline-flex items-center justify-center rounded-full bg-[#FF1744] px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#D50000] hover:shadow-xl hover:shadow-red-200"
-              >
-                Commencer maintenant
-                <svg
-                  className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
+              <div className="relative flex items-center justify-center">
+                {/* Floating robot video behind the button */}
+                <motion.div
+                  className="absolute -top-20 lg:-top-24 z-0 w-36 h-36 lg:w-44 lg:h-44 pointer-events-none"
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                  style={{
+                    maskImage: "radial-gradient(ellipse 65% 65% at center, black 30%, transparent 70%)",
+                    WebkitMaskImage: "radial-gradient(ellipse 65% 65% at center, black 30%, transparent 70%)",
+                  }}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
+                  <video
+                    src="/images/coucou.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-contain"
+                  />
+                </motion.div>
 
-              <div className="flex items-center gap-3">
-                <Image src="/images/customers.webp" alt="Customers" width={160} height={40} className="h-10 w-auto" />
-                <div className="flex items-center gap-1.5">
-                  <span className="text-[15px] font-semibold text-gray-900">4.9/5</span>
-                  <span className="text-[14px] text-gray-500">from</span>
-                  <span className="text-[15px] font-semibold text-gray-900">1783</span>
-                  <span className="text-[14px] text-gray-500">customers</span>
-                  <svg className="h-[18px] w-[18px] ml-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none">
-                    <path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81C14.67 2.63 13.43 1.75 12 1.75s-2.67.88-3.34 2.19c-1.39-.46-2.9-.2-3.91.81s-1.27 2.52-.81 3.91C2.63 9.33 1.75 10.57 1.75 12s.88 2.67 2.19 3.34c-.46 1.39-.2 2.9.81 3.91s2.52 1.27 3.91.81C9.33 21.37 10.57 22.25 12 22.25s2.67-.88 3.34-2.19c1.39.46 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34z" fill="#1D9BF0"/>
-                    <path d="M9.28 12.71l1.42 1.42c.39.39 1.02.39 1.41 0l3.18-3.18c.39-.39.39-1.02 0-1.41a.9959.9959 0 00-1.41 0L11.4 12.02l-.71-.71a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.4z" fill="white"/>
+                <a
+                  href="#pricing"
+                  className="relative z-10 group inline-flex items-center justify-center rounded-full bg-[#FF1744] px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#D50000] hover:shadow-xl hover:shadow-red-200"
+                >
+                  Commencer maintenant
+                  <svg
+                    className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </div>
+                </a>
               </div>
+
+              <a href="#proof" className="text-[#6B7280] text-sm font-medium hover:text-[#111] transition-colors flex items-center gap-1.5">
+                Voir les r&eacute;sultats des &eacute;l&egrave;ves &darr;
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              className="mt-6 flex justify-center"
+            >
+              <span className="inline-flex items-center gap-2 text-xs text-[#6B7280] bg-gray-100 rounded-full px-4 py-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#FF1744] animate-pulse" />
+                Prochaine cohorte : <strong className="text-[#111]">24 mars 2026</strong> &mdash; 12 places restantes
+              </span>
             </motion.div>
         </div>
 

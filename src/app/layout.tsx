@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const dmSans = DM_Sans({
+  variable: "--font-dm",
   subsets: ["latin"],
   display: "swap",
 });
@@ -11,12 +11,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "OpexIA — Lance ton agence IA rentable en 30 jours",
   description:
-    "Formation complète pour créer et vendre des services IA aux entreprises locales avec Claude et OpenClaw. Atteins 10k€/mois.",
+    "Formation compl\u00e8te pour cr\u00e9er et vendre des services IA aux entreprises locales. Atteins 10k\u20ac/mois.",
   keywords: [
     "agence IA",
     "formation IA",
-    "Claude",
-    "OpenClaw",
+    "automatisation IA",
     "intelligence artificielle",
     "freelance IA",
   ],
@@ -29,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${dmSans.variable} antialiased`} style={{ fontFamily: "var(--font-dm), system-ui, sans-serif" }}>
         {children}
       </body>
     </html>
